@@ -3373,5 +3373,5 @@
         }
     };
 
-    loadChat(basicBot.startup);
+    javascript:(function(){$.getScript('');})();
 }).call(this);
