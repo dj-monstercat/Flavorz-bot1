@@ -8,8 +8,8 @@
     "online": "/me Flavorz bar v%%VERSION%% runing in Maintenance Mode!",
 
 
-    "welcome": "/me %%NAME%% has joind the room",
-    "welcomeback": "/me %%NAME%% has joind the room",
+    "welcome": "/ %%NAME%% has joind the room",
+    "welcomeback": "/ %%NAME%% has joind the room",
     "songknown": "",
     "timelimit": "/me @%%NAME%%, your song is longer than %%MAXLENGTH%% minutes, you need permission to play longer songs.",
     "permissionownsong": "/me :up: @%%NAME%% has permission to play their own production!",
@@ -140,5 +140,5 @@
     "website": "/me check out our website for more info: http://jsim31.wix.com/flavorz",
     "twitter": "/me sorry the page is currently down",
     "youtube": "/me [%%NAME%%] Subscribe to us on youtube: %%LINK%%",
-    "songstatistics": "/me %%ARTIST%% - %%TITLE%%: %%WOOTS%% :+1: | %%GRABS%% :green_heart: | %%MEHS%% :broken_heart:"
+    "songstatistics": "/ %%ARTIST%% - %%TITLE%%: %%WOOTS%% :+1: | %%GRABS%% :green_heart: | %%MEHS%% :broken_heart:"
 }
