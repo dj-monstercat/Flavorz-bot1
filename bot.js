@@ -173,7 +173,7 @@
     var trapbot = {
         version: "4.6.9",
         status: false,
-        name: "Flavorz bot",
+        name: "Flavorz bar",
         loggedInID: null,
         scriptLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/bot.js",
         cmdLink: "http://goo.gl/qPOuYn",
@@ -183,7 +183,7 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "Flavorz bot",
+            botName: "Flavorz bar",
             language: "english",
             chatLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/en.json",
             maximumAfk: 120,
