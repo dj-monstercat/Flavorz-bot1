@@ -5,7 +5,7 @@
     "datarestored": "Previously stored data successfully retrieved.",
     "greyuser": "Only bouncers and up can run a bot.",
     "bouncer": "The bot can't move people when it's run as a bouncer.",
-    "online": "/me Flavorz bot v%%VERSION%% online!",
+    "online": "/me Flavorz bar v%%VERSION%% online!",
 
 
     "welcome": "/me %%NAME%% has joind the room",
@@ -17,7 +17,7 @@
 
 
     "isopen": "/me The roulette is now open! Type !join to participate!",
-    "winnerpicked": "/me A winner has been picked! @%%NAME%% to position %%POSITION%%.",
+    "winnerpicked": "/me @%%NAME%% good shit man you won! moving yo ass to %%POSITION%%.",
 
 
     "alreadyadding": "/me User is already being added! Changed the desired position to %%POSITION%%.",
@@ -25,10 +25,10 @@
 
 
     "usernotfound": "/me User not found.",
-    "notdisconnected": "/me @%%NAME%% did not disconnect during my time here.",
+    "notdisconnected": "/me @%%NAME%% did not see yo ass disconnect.",
     "noposition": "/me No last position known. The waitlist needs to update at least once to register a user's last position.",
     "toolongago": "/me @%%NAME%%'s last disconnect (DC or leave) was too long ago: %%TIME%%.",
-    "valid": "/me @%%NAME%% disconnected %%TIME%% ago and should be at position %%POSITION%%.",
+    "valid": "/me @%%NAME%% you disconnected %%TIME%% ago, moving yo ass back to %%POSITION%%.",
 
 
     "warning1": "/me @%%NAME%%, you have been afk for %%TIME%%, please respond within 2 minutes or you will be removed.",
@@ -124,7 +124,7 @@
     "roomrules": "/me Sorry the page is currently down.",
     "sessionstats": "/me [@%%NAME%%] Total woots: %%WOOTS%%, total mehs: %%MEHS%%, total grabs: %%GRABS%%.",
     "skip": "/me [%%NAME%% used skip.]",
-    "madeby": "/me This bot was made by Edmc-Nation team.",
+    "madeby": "/me This bot was made by dj-monsterat.",
     "activefor": "I have been active for %%TIME%%.",
     "swapinvalid": "/me [@%%NAME%%] Invalid user specified. (No names with spaces!)",
     "swapwlonly": "/me [@%%NAME%%] Please only swap users that are in the waitlist!",
@@ -140,5 +140,5 @@
     "website": "/me Sorry the page is currenlty down",
     "twitter": "/me sorry the page is currently down",
     "youtube": "/me [%%NAME%%] Subscribe to us on youtube: %%LINK%%",
-    "songstatistics": "/me %%ARTIST%% - %%TITLE%%: %%WOOTS%% :+1: | %%GRABS%% :star: | %%MEHS%% :-1:"
+    "songstatistics": "/me %%ARTIST%% - %%TITLE%%: %%WOOTS%% :+1: | %%GRABS%% :green_heart: | %%MEHS%% :broken_heart:"
 }
