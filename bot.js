@@ -47,7 +47,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/EDM-Birthday/EDM-Nation-Bot/Bot.js/langIndex.json", function (json) {
+        $.get("https://rawgit.com/dj-monstercat/Flavorz-bot1/master/en.json", function (json) {
             var link = trapbot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -167,25 +167,25 @@
         return m;
     };
 
-    var botCreator = "A secret";
+    var botCreator = "dj-monstercat";
     var botCreatorIDs = [];
 
     var trapbot = {
         version: "4.6.9",
         status: false,
-        name: "EDM-Nation bot",
+        name: "Flavorz bot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/EDM-Birthday/EDM-Nation-Bot/Bot.js/Bot.js",
+        scriptLink: "null",
         cmdLink: "http://goo.gl/qPOuYn",
-        chatLink: "https://rawgit.com/EDM-Birthday/EDM-Nation-Bot/Bot.js/en.json",
+        chatLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "EDM-Nation Bot",
+            botName: "Flavorz bot",
             language: "english",
-            chatLink: "https://rawgit.com/EDM-Birthday/EDM-Nation-Bot/Bot.js/en.json",
+            chatLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/en.json",
             maximumAfk: 120,
             afkRemoval: false,
             maximumDc: 60,
@@ -224,7 +224,7 @@
             opLink: "http://goo.gl/SGFnOh",
             rulesLink: "http://goo.gl/96KCIU",
             themeLink: null,
-            fbLink: "http://goo.gl/QGmRD8",
+            fbLink: "null",
             youtubeLink: null,
             website: "http://jsim31.wix.com/edm-nation",
             intervalMessages: [],
