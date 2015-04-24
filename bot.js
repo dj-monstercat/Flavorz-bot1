@@ -27,7 +27,7 @@
             stored: true,
             version: trapbot.version
         };
-        localStorage.setItem(((("trapbot)))StorageInfo", JSON.stringify(FlavorzbarStorageInfo));
+        localStorage.setItem("trapbotStorageInfo", JSON.stringify(FlavorzbarStorageInfo));
 
     };
 
@@ -48,16 +48,16 @@
         if (!cb) cb = function () {
         };
         $.get("https://rawgit.com/dj-monstercat/Flavorz-bot1/master/en.json", function (json) {
-            var link = Flavorzbar.chatLink;
+            var link = trapbot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
-                link = langIndex[Flavorzbar.settings.language.toLowerCase()];
-                if (Flavorzbar.settings.chatLink !== Flavorzbar.chatLink) {
-                    link = Flavorzbar.settings.chatLink;
+                link = langIndex[trapbot.settings.language.toLowerCase()];
+                if (trapbot.settings.chatLink !== trapbot.chatLink) {
+                    link = trapbot.settings.chatLink;
                 }
                 else {
                     if (typeof link === "undefined") {
-                        link = Flavorzbar.chatLink;
+                        link = (((trapbot))).chatLink;
                     }
                 }
                 $.get(link, function (json) {
