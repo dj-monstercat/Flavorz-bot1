@@ -14,20 +14,20 @@
     };
 
     var kill = function () {
-        clearInterval(Flavorzbar.room.autodisableInterval);
-        clearInterval(Flavorzbar.room.afkInterval);
-        Flavorzbar.status = false;
+        clearInterval(trapbot.room.autodisableInterval);
+        clearInterval(trapbot.room.afkInterval);
+        trapbot.status = false;
     };
 
     var storeToStorage = function () {
-        localStorage.setItem("Flavorzbarsettings", JSON.stringify(Flavorzbar.settings));
-        localStorage.setItem("FlavorzbarRoom", JSON.stringify(Flavorzbar.room));
+        localStorage.setItem("trapbotsettings", JSON.stringify(Flavorzbar.settings));
+        localStorage.setItem("trapbotRoom", JSON.stringify(Flavorzbar.room));
         var trapbotStorageInfo = {
             time: Date.now(),
             stored: true,
-            version: Flavorzbar.version
+            version: trapbot.version
         };
-        localStorage.setItem("FlavorzbarStorageInfo", JSON.stringify(FlavorzbarStorageInfo));
+        localStorage.setItem(((("trapbot)))StorageInfo", JSON.stringify(FlavorzbarStorageInfo));
 
     };
 
