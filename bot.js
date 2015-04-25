@@ -20,8 +20,8 @@
     };
 
     var storeToStorage = function () {
-        localStorage.setItem("trapbotsettings", JSON.stringify(Flavorzbar.settings));
-        localStorage.setItem("trapbotRoom", JSON.stringify(Flavorzbar.room));
+        localStorage.setItem("trapbotsettings", JSON.stringify(trapbot.settings));
+        localStorage.setItem("trapbotRoom", JSON.stringify(trapbot.room));
         var trapbotStorageInfo = {
             time: Date.now(),
             stored: true,
@@ -57,19 +57,19 @@
                 }
                 else {
                     if (typeof link === "undefined") {
-                        link = (((trapbot))).chatLink;
+                        link = trapbot.chatLink;
                     }
                 }
                 $.get(link, function (json) {
                     if (json !== null && typeof json !== "undefined") {
                         if (typeof json === "string") json = JSON.parse(json);
-                        Flavorzbar.chat = json;
+                        trapbot.chat = json;
                         cb();
                     }
                 });
             }
             else {
-                $.get(Flavorzbar.chatLink, function (json) {
+                $.get(trapbot.chatLink, function (json) {
                     if (json !== null && typeof json !== "undefined") {
                         if (typeof json === "string") json = JSON.parse(json);
                         trapbot.chat = json;
@@ -81,42 +81,42 @@
     };
 
     var retrieveSettings = function () {
-        var settings = JSON.parse(localStorage.getItem("Flavorzbarsettings"));
+        var settings = JSON.parse(localStorage.getItem("trapbotsettings"));
         if (settings !== null) {
             for (var prop in settings) {
-                Flavorzbar.settings[prop] = settings[prop];
+                trapbot.settings[prop] = settings[prop];
             }
         }
     };
 
     var retrieveFromStorage = function () {
-        var info = localStorage.getItem("FlavorzbarStorageInfo");
-        if (info === null) API.chatLog(Flavorzbar.chat.nodatafound);
+        var info = localStorage.getItem("trapbotStorageInfo");
+        if (info === null) API.chatLog(trapbot.chat.nodatafound);
         else {
-            var settings = JSON.parse(localStorage.getItem("Flavorzbarsettings"));
-            var room = JSON.parse(localStorage.getItem("FlavorzbarRoom"));
+            var settings = JSON.parse(localStorage.getItem("trapbotsettings"));
+            var room = JSON.parse(localStorage.getItem("trapbotRoom"));
             var elapsed = Date.now() - JSON.parse(info).time;
             if ((elapsed < 1 * 60 * 60 * 1000)) {
-                API.chatLog(Flavorzbar.chat.retrievingdata);
+                API.chatLog(trapbot.chat.retrievingdata);
                 for (var prop in settings) {
-                    Flavorzbar.settings[prop] = settings[prop];
+                    trapbot.settings[prop] = settings[prop];
                 }
-                Flavorzbar.room.users = room.users;
-                Flavorzbar.room.afkList = room.afkList;
-                Flavorzbar.room.historyList = room.historyList;
-                Flavorzbar.room.mutedUsers = room.mutedUsers;
-                Flavorzbar.room.autoskip = room.autoskip;
-                Flavorzbar.room.roomstats = room.roomstats;
-                Flavorzbar.room.messages = room.messages;
-                Flavorzbar.room.queue = room.queue;
-                Flavorzbar.room.newBlacklisted = room.newBlacklisted;
-                API.chatLog(Flavorzbar.chat.datarestored);
+                trapbot.room.users = room.users;
+                trapbot.room.afkList = room.afkList;
+                trapbot.room.historyList = room.historyList;
+                trapbot.room.mutedUsers = room.mutedUsers;
+                trapbot.room.autoskip = room.autoskip;
+                trapbot.room.roomstats = room.roomstats;
+                trapbot.room.messages = room.messages;
+                trapbot.room.queue = room.queue;
+                trapbot.room.newBlacklisted = room.newBlacklisted;
+                API.chatLog(trapbot.chat.datarestored);
             }
         }
         /*var json_sett = null;
         var roominfo = document.getElementById("room-info");
         info = roominfo.textContent;
-        var ref_bot = "@Flavorzbar=";
+        var ref_bot = "@trapbot=";
         var ind_ref = info.indexOf(ref_bot);
         if (ind_ref > 0) {
             var link = info.substring(ind_ref + ref_bot.length, info.length);
@@ -128,7 +128,7 @@
                 if (json !== null && typeof json !== "undefined") {
                     json_sett = JSON.parse(json);
                     for (var prop in json_sett) {
-                        Flavorzbar.settings[prop] = json_sett[prop];
+                        trapbot.settings[prop] = json_sett[prop];
                     }
                 }
             });
@@ -170,10 +170,10 @@
     var botCreator = "dj-monstercat";
     var botCreatorIDs = [];
 
-    var Flavorzbar = {
+    var trapbot = {
         version: "4.6.9",
         status: false,
-        name: "Flavorz bar",
+        name: "trapbot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/bot.js",
         cmdLink: "http://goo.gl/qPOuYn",
@@ -249,7 +249,7 @@
             autoskipTimer: null,
             autodisableInterval: null,
             autodisableFunc: function () {
-                if (Flavorzbar.status && Flavorzbar.settings.autodisable) {
+                if (trapbot.status && trapbot.settings.autodisable) {
                     API.sendChat('welcome all to Flavorz don't forget to bookmark the room);
                 }
             },
@@ -287,23 +287,23 @@
                 participants: [],
                 countdown: null,
                 startRoulette: function () {
-                    Flavorzbar.room.roulette.rouletteStatus = true;
-                    Flavorzbar.room.roulette.countdown = setTimeout(function () {
-                        Flavorzbar.room.roulette.endRoulette();
+                    trapbot.room.roulette.rouletteStatus = true;
+                    trapbot.room.roulette.countdown = setTimeout(function () {
+                        trapbot.room.roulette.endRoulette();
                     }, 60 * 1000);
-                    API.sendChat(Flavorzbar.chat.isopen);
+                    API.sendChat(trapbot.chat.isopen);
                 },
                 endRoulette: function () {
-                    Flavorzbar.room.roulette.rouletteStatus = false;
-                    var ind = Math.floor(Math.random() * Flavorzbar.room.roulette.participants.length);
-                    var winner = Flavorzbar.roulette.participants[ind];
-                    Flavorzbar.room.roulette.participants = [];
+                    trapbot.room.roulette.rouletteStatus = false;
+                    var ind = Math.floor(Math.random() * trapbot.room.roulette.participants.length);
+                    var winner = trapbot.roulette.participants[ind];
+                    trapbot.room.roulette.participants = [];
                     var pos = Math.floor((Math.random() * API.getWaitList().length) + 1);
                     var user = trapbot.userUtilities.lookupUser(winner);
                     var name = user.username;
-                    API.sendChat(subChat(Flavorzbar.chat.winnerpicked, {name: name, position: pos}));
+                    API.sendChat(subChat(trapbot.chat.winnerpicked, {name: name, position: pos}));
                     setTimeout(function (winner, pos) {
-                        Flavorzbar.userUtilities.moveUser(winner, pos, false);
+                        trapbot.userUtilities.moveUser(winner, pos, false);
                     }, 1 * 1000, winner, pos);
                 }
             }
@@ -360,24 +360,24 @@
                 user.afkWarningCount = value;
             },
             lookupUser: function (id) {
-                for (var i = 0; i < Flavorzbar.room.users.length; i++) {
-                    if (Flavorzbar.room.users[i].id === id) {
-                        return Flavorzbar.room.users[i];
+                for (var i = 0; i < trapbot.room.users.length; i++) {
+                    if (trapbot.room.users[i].id === id) {
+                        return trapbot.room.users[i];
                     }
                 }
                 return false;
             },
             lookupUserName: function (name) {
-                for (var i = 0; i < Flavorzbar.room.users.length; i++) {
-                    var match = Flavorzbar.room.users[i].username.trim() == name.trim();
+                for (var i = 0; i < trapbot.room.users.length; i++) {
+                    var match = trapbot.room.users[i].username.trim() == name.trim();
                     if (match) {
-                        return Flavorzbar.room.users[i];
+                        return trapbot.room.users[i];
                     }
                 }
                 return false;
             },
             voteRatio: function (id) {
-                var user = Flavorzbar.userUtilities.lookupUser(id);
+                var user = trapbot.userUtilities.lookupUser(id);
                 var votes = user.votes;
                 if (votes.meh === 0) votes.ratio = 1;
                 else votes.ratio = (votes.woot / votes.meh).toFixed(2);
@@ -405,7 +405,7 @@
                 return 0;
             },
             moveUser: function (id, pos, priority) {
-                var user = Flavorzbar.userUtilities.lookupUser(id);
+                var user = trapbot.userUtilities.lookupUser(id);
                 var wlist = API.getWaitList();
                 if (API.getWaitListPosition(id) === -1) {
                     if (wlist.length < 50) {
@@ -416,30 +416,30 @@
                     }
                     else {
                         var alreadyQueued = -1;
-                        for (var i = 0; i < Flavorzbar.room.queue.id.length; i++) {
-                            if (Flavorzbar.room.queue.id[i] === id) alreadyQueued = i;
+                        for (var i = 0; i < trapbot.room.queue.id.length; i++) {
+                            if (trapbot.room.queue.id[i] === id) alreadyQueued = i;
                         }
                         if (alreadyQueued !== -1) {
-                            Flavorzbar.room.queue.position[alreadyQueued] = pos;
-                            return API.sendChat(subChat)Flavorzbar.chat.alreadyadding, {position: Flavorzbar.room.queue.position[alreadyQueued]}));
+                            trapbot.room.queue.position[alreadyQueued] = pos;
+                            return API.sendChat(subChat)trapbot.chat.alreadyadding, {position: trapbot.room.queue.position[alreadyQueued]}));
                         }
-                        Flavorzbar.roomUtilities.booth.lockBooth();
+                        trapbot.roomUtilities.booth.lockBooth();
                         if (priority) {
-                            Flavorzbar.room.queue.id.unshift(id);
-                            Flavorzbar.room.queue.position.unshift(pos);
+                            trapbot.room.queue.id.unshift(id);
+                            trapbot.room.queue.position.unshift(pos);
                         }
                         else {
-                            Flavorzbar.room.queue.id.push(id);
-                            Flavorzbar.room.queue.position.push(pos);
+                            trapbot.room.queue.id.push(id);
+                            trapbot.room.queue.position.push(pos);
                         }
                         var name = user.username;
-                        return API.sendChat(subChat(Flavorzbar.chat.adding, {name: name, position: Flavorzbar.room.queue.position.length}));
+                        return API.sendChat(subChat(trapbot.chat.adding, {name: name, position: trapbot.room.queue.position.length}));
                     }
                 }
                 else API.moderateMoveDJ(id, pos);
             },
             dclookup: function (id) {
-                var user = (((trapbot))).userUtilities.lookupUser(id);
+                var user = trapbot.userUtilities.lookupUser(id);
                 if (typeof user === 'boolean') return trapbot.chat.usernotfound;
                 var name = user.username;
                 if (user.lastDC.time === null) return subChat(trapbot.chat.notdisconnected, {name: name});
