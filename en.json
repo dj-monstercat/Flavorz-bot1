@@ -5,7 +5,7 @@
     "datarestored": "Previously stored data successfully retrieved.",
     "greyuser": "Only bouncers and up can run a bot.",
     "bouncer": "The bot can't move people when it's run as a bouncer.",
-    "online": "/me Flavorz bar v%%VERSION%% runing in Maintenance Mode!",
+    "online": "/me Flavorz bar v%%VERSION%% online!",
 
 
     "welcome": "/me %%NAME%% has joind the room",
@@ -139,6 +139,6 @@
     "voteratio": "/me [@%%NAME%%] @%%USERNAME%% ~ woots: %%WOOT%%, mehs: %%MEHS%%, ratio (w/m): %%RATIO%%.",
     "website": "/me check out our website for more info: http://jsim31.wix.com/flavorz",
     "twitter": "/me sorry the page is currently down",
-    "youtube": "/me [%%NAME%%] Subscribe to us on youtube: %%LINK%%",
-    "songstatistics": "/me %%ARTIST%% - %%TITLE%%: %%WOOTS%% :+1: | %%GRABS%% :green_heart: | %%MEHS%% :broken_heart:"
+    "youtube": "/me sorry the page is currently down",
+    "songstatistics": "/me %%NAME%%: %%WOOTS%% :+1: | %%GRABS%% :green_heart: | %%MEHS%% :broken_heart:"
 }
