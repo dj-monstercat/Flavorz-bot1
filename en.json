@@ -140,5 +140,5 @@
     "website": "/me check out our website for more info: http://jsim31.wix.com/flavorz",
     "twitter": "/me sorry the page is currently down",
     "youtube": "/me sorry the page is currently down",
-    "songstatistics": "/me %%NAME%% : %%WOOTS%% :+1: | %%GRABS%% :green_heart: | %%MEHS%% :broken_heart:"
+    "songstatistics": "/me %%TITLE%% : %%WOOTS%% :+1: | %%GRABS%% :green_heart: | %%MEHS%% :broken_heart:"
 }
