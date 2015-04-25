@@ -47,7 +47,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/EDM-Birthday/EDM-Nation-Bot/Bot.js/langIndex.json", function (json) {
+        $.get("https://rawgit.com/dj-monstercat/Flavorz-bot1/master/langIndex.json", function (json) {
             var link = trapbot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -167,25 +167,25 @@
         return m;
     };
 
-    var botCreator = "A secret";
+    var botCreator = "dj-monstercat1";
     var botCreatorIDs = [];
 
     var trapbot = {
         version: "4.6.9",
         status: false,
-        name: "EDM-Nation bot",
+        name: "Flavorz-bot1",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/EDM-Birthday/EDM-Nation-Bot/Bot.js/Bot.js",
+        scriptLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/Bot.js",
         cmdLink: "http://goo.gl/qPOuYn",
-        chatLink: "https://rawgit.com/EDM-Birthday/EDM-Nation-Bot/Bot.js/en.json",
+        chatLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "EDM-Nation Bot",
+            botName: "Flavorz bar",
             language: "english",
-            chatLink: "https://rawgit.com/EDM-Birthday/EDM-Nation-Bot/Bot.js/en.json",
+            chatLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/en.json",
             maximumAfk: 120,
             afkRemoval: false,
             maximumDc: 60,
@@ -217,7 +217,7 @@
             afkRankCheck: "ambassador",
             motdEnabled: false,
             motdInterval: 20,
-            motd: "Welcome to EDM Nation remember to favourite the room if you want to return at a later time.",
+            motd: "",
             filterChat: true,
             etaRestriction: false,
             welcome: true,
