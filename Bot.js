@@ -1,4 +1,3 @@
-
 (function () {
 
     API.getWaitListPosition = function(id){
