@@ -232,8 +232,8 @@
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "",
-                OP: ""
+                NSFW: "http://jsim31.wix.com/edm-nation",
+                OP: "http://jsim31.wix.com/edm-nation"
             }
         },
         room: {
