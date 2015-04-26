@@ -183,7 +183,7 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "EF-Bot",
+            botName: "Flavorz bar",
             language: "english",
             chatLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/en.json",
             maximumAfk: 120,
@@ -224,9 +224,9 @@
             opLink: "",
             rulesLink: "",
             themeLink: null,
-            fbLink: "http://goo.gl/CAjtBf",
+            fbLink: "null",
             youtubeLink: null,
-            website: "",
+            website: "not a website but we have a stream: http://www.twitch.tv/nightblue3",
             intervalMessages: [],
             messageInterval: 5,
             songstats: true,
@@ -250,7 +250,7 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (trapbot.status && trapbot.settings.autodisable) {
-                    API.sendChat('fallow us on twitter: http://goo.gl/CAjtBf');
+                    API.sendChat('we got commands do you want to know wich type !commands');
                 }
             },
             queueing: 0,
