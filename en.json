@@ -18,7 +18,8 @@
 
     "isopen": "/me The roulette is now open! Type !join to participate!",
     "winnerpicked": "/me A winner has been picked! @%%NAME%% to position %%POSITION%%.",
-
+    
+    "ball": "/me %%NAME%%'s question was: \"%%QUESTION%%\" and %%BOTNAME%%'s response is: \"%%RESPONSE%%\"",
 
     "alreadyadding": "/me User is already being added! Changed the desired position to %%POSITION%%.",
     "adding": "/me Added @%%NAME%% to the queue. Current queue: %%POSITION%%.",
