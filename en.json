@@ -5,7 +5,7 @@
     "datarestored": "Previously stored data successfully retrieved.",
     "greyuser": "Only bouncers and up can run a bot.",
     "bouncer": "The bot can't move people when it's run as a bouncer.",
-    "online": "/me EF-Bot v%%VERSION%% online!",
+    "online": "/me Flavorz bar v%%VERSION%% online!",
 
 
     "welcome": "/me %%NAME%% has joind the room!",
@@ -85,7 +85,7 @@
     "bouncerplusrank": "/me [@%%NAME%%] You have to be manager or up to enable Bouncer+.",
     "chatcleared": "/me [@%%NAME%%] Cleared the chat.",
     "deletechat": "/me [@%%NAME%%] Cleared the chat of %%USERNAME%%.",
-    "commandslink": "/me it's a trap bot commands: http://goo.gl/mmSRJw",
+    "commandslink": "/me Flavorz bar commands: http://goo.gl/mmSRJw",
     "eatcookie": "/me eats a cookie.",
     "nousercookie": "/em doesn't see %%NAME%% in room and eats a cookie himself.",
     "selfcookie": "/me @%%NAME%%, you're a bit greedy, aren't you? Giving cookies to yourself, bah. Share some with other people!",
@@ -95,7 +95,7 @@
     "emojilist": "/me Emoji list: %%LINK%%",
     "notinwaitlist": "/me @%%NAME%%, you are not on the waitlist.",
     "eta": "/me @%%NAME%% you will reach the booth in approximately %%TIME%%.",
-    "facebook": "/me Like us on facebook: http://goo.gl/jKRvJw",
+    "facebook": "/me null",
     "starterhelp": "/me This image will get you started on plug: %%LINK%%",
     "roulettejoin": "/me @%%NAME%% joined the roulette! (!leave if you regret it.)",
     "jointime": "/me [@%%NAMEFROM%%] @%%USERNAME%% has been in the room for %%TIME%%.",
@@ -137,8 +137,8 @@
     "unmuterank": "/me [@%%NAME%%] You can't unmute persons with an equal or higher rank than you.",
     "commandscd": "/me [@%%NAME%%] The cooldown for commands by users is now set to %%TIME%% seconds.",
     "voteratio": "/me [@%%NAME%%] @%%USERNAME%% ~ woots: %%WOOT%%, mehs: %%MEHS%%, ratio (w/m): %%RATIO%%.",
-    "website": "/me Sorry the page is currenlty down",
-    "twitter": "/me Follow us for the newest updates: http://goo.gl/CAjtBf",
+    "website": "/me we don't have a website but we do have a stream:  http://www.twitch.tv/nightblue3",
+    "twitter": "/me null",
     "youtube": "/me [%%NAME%%] Subscribe to us on youtube: %%LINK%%",
     "songstatistics": "/me %%TITLE%% : %%WOOTS%% :+1: | %%GRABS%% :green_heart: | %%MEHS%% :broken_heart:"
 }
