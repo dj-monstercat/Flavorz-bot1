@@ -266,7 +266,7 @@
             opLink: null,
             rulesLink: null,
             themeLink: null,
-            fbLink: null,
+            fbLink: http://goo.gl/jKRvJw,
             youtubeLink: null,
             website: null,
             intervalMessages: [],
