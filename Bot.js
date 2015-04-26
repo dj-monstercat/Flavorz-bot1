@@ -183,7 +183,7 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "Flavorz bar",
+            botName: "EF-Bot",
             language: "english",
             chatLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/en.json",
             maximumAfk: 120,
@@ -226,7 +226,7 @@
             themeLink: null,
             fbLink: "null",
             youtubeLink: null,
-            website: "no website but we have a stream: http://www.twitch.tv/nightblue3",
+            website: "null",
             intervalMessages: [],
             messageInterval: 5,
             songstats: false,
