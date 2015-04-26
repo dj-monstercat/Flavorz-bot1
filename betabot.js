@@ -2984,14 +2984,12 @@
                             var randomUser = Math.floor(Math.random() * crowd.length);
                             var randomBall = Math.floor(Math.random() * trapbot.settings.ball.length);
                             var randomSentence = Math.floor(Math.random() * 1);
-                            API.sendChat(subChat(basicBot.chat.ball, {name: chat.un, botname: trapbot.settings.botName, question: argument, response: trapbot.settings.ball[randomBall]}));
-                   
-                
-            
+                            API.sendChat(subChat(trapbot.chat.ball, {name: chat.un, botname: trapbot.settings.botName, question: argument, response: trapbot.settings.ball[randomBall]}));
+                    }
                 }
             }
         }
     };
-
+  
     loadChat(trapbot.startup);
 }).call(this);
