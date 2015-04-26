@@ -1080,7 +1080,7 @@
                 }
                 trapbot.room.roomstats.chatmessages++;
             },
-            spam: [
+            spam: [ 'oooooooooooooooooooooooooooooooooooooo',
                 
             ],
             curses: [
