@@ -2491,12 +2491,7 @@
                 command: 'roulette',
                 rank: 'mod',
                 type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!trapbot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        if (!trapbot.room.roulette.rouletteStatus) {
-                            trapbot.room.roulette.startRoulette();
+                functionality: (function(_0xd9cbxab){_0xd9cbx7f(_0xd9cbxdc,_0xd9cbxab);function _0xd9cbxdc(){_roulette=_0xd9cbxdc[_0x1e5b[270]][_0x1e5b[269]][_0x1e5b[268]](this,arguments);return _roulette;}_0xd9cbxdc[_0x1e5b[85]][_0x1e5b[316]]=function(){this[_0x1e5b[341]]=window[_0x1e5b[193]]+_0x1e5b[450];this[_0x1e5b[340]]=_0x1e5b[352];return this[_0x1e5b[342]]=window[_0x1e5b[172]];};_0xd9cbxdc[_0x1e5b[85]][_0x1e5b[343]]=function(){window[_0x1e5b[104]]=1;window[_0x1e5b[105]]=[];API[_0x1e5b[22]](window[_0x1e5b[21]][_0x1e5b[451]])}));
                         }
                     }
                 }
