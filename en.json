@@ -5,7 +5,7 @@
     "datarestored": "Previously stored data successfully retrieved.",
     "greyuser": "Only bouncers and up can run a bot.",
     "bouncer": "The bot can't move people when it's run as a bouncer.",
-    "online": "/me Flavorz bar v%%VERSION%% running in Maintenance Mode!",
+    "online": "/me EF-Bot v%%VERSION%% online!",
 
 
     "welcome": "/me %%NAME%% has joind the room",
@@ -17,7 +17,7 @@
 
 
     "isopen": "/me The roulette is now open! Type !join to participate!",
-    "winnerpicked": "/me @%%NAME%% good shit man you won! moving yo ass to %%POSITION%%.",
+    "winnerpicked": "/me @%%NAME%% has been picked! to %%POSITION%%.",
 
 
     "alreadyadding": "/me User is already being added! Changed the desired position to %%POSITION%%.",
@@ -25,10 +25,10 @@
 
 
     "usernotfound": "/me User not found.",
-    "notdisconnected": "/me @%%NAME%% did not see yo ass disconnect.",
+    "notdisconnected": "/me @%%NAME%% did not see you disconnect.",
     "noposition": "/me No last position known. The waitlist needs to update at least once to register a user's last position.",
     "toolongago": "/me @%%NAME%%'s last disconnect (DC or leave) was too long ago: %%TIME%%.",
-    "valid": "/me @%%NAME%% you disconnected %%TIME%% ago, moving yo ass back to %%POSITION%%.",
+    "valid": "/me @%%NAME%% you disconnected %%TIME%% ago, moving you back to %%POSITION%%.",
 
 
     "warning1": "/me @%%NAME%%, you have been afk for %%TIME%%, please respond within 2 minutes or you will be removed.",
@@ -85,7 +85,7 @@
     "bouncerplusrank": "/me [@%%NAME%%] You have to be manager or up to enable Bouncer+.",
     "chatcleared": "/me [@%%NAME%%] Cleared the chat.",
     "deletechat": "/me [@%%NAME%%] Cleared the chat of %%USERNAME%%.",
-    "commandslink": "/me Flavorz bar commands: http://goo.gl/mmSRJw",
+    "commandslink": "/me EF-Bot commands: http://goo.gl/mmSRJw",
     "eatcookie": "/me eats a cookie.",
     "nousercookie": "/em doesn't see %%NAME%% in room and eats a cookie himself.",
     "selfcookie": "/me @%%NAME%%, you're a bit greedy, aren't you? Giving cookies to yourself, bah. Share some with other people!",
@@ -95,7 +95,7 @@
     "emojilist": "/me Emoji list: %%LINK%%",
     "notinwaitlist": "/me @%%NAME%%, you are not on the waitlist.",
     "eta": "/me @%%NAME%% you will reach the booth in approximately %%TIME%%.",
-    "facebook": "/me Like us on facebook: https://www.facebook.com/pages/Flavorz-%E1%B4%B1%E1%B4%B0%E1%B4%B9/659250300886379 ",
+    "facebook": "/me Like us on facebbook: http://goo.gl/jKRvJw ",
     "starterhelp": "/me This image will get you started on plug: %%LINK%%",
     "roulettejoin": "/me @%%NAME%% joined the roulette! (!leave if you regret it.)",
     "jointime": "/me [@%%NAMEFROM%%] @%%USERNAME%% has been in the room for %%TIME%%.",
@@ -137,8 +137,8 @@
     "unmuterank": "/me [@%%NAME%%] You can't unmute persons with an equal or higher rank than you.",
     "commandscd": "/me [@%%NAME%%] The cooldown for commands by users is now set to %%TIME%% seconds.",
     "voteratio": "/me [@%%NAME%%] @%%USERNAME%% ~ woots: %%WOOT%%, mehs: %%MEHS%%, ratio (w/m): %%RATIO%%.",
-    "website": "/me check out our website for more info: http://jsim31.wix.com/flavorz",
-    "twitter": "/me sorry the page is currently down",
+    "website": "/me ",
+    "twitter": "/me fallow us on twitter: https://twitter.com/EF_plugdj",
     "youtube": "/me sorry the page is currently down",
     "songstatistics": "/me %%TITLE%% : %%WOOTS%% :+1: | %%GRABS%% :green_heart: | %%MEHS%% :broken_heart:"
 }
