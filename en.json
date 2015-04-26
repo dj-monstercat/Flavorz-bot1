@@ -5,7 +5,7 @@
     "datarestored": "Previously stored data successfully retrieved.",
     "greyuser": "Only bouncers and up can run a bot.",
     "bouncer": "The bot can't move people when it's run as a bouncer.",
-    "online": "/me EF-Bot v%%VERSION%% online!",
+    "online": "/me EF-Bot v%%VERSION%% rinning in Maintenance Mode! some stuff may not work due to editing the script.",
 
 
     "welcome": "/me %%NAME%% has joind the room!",
