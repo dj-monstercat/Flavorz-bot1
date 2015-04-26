@@ -171,7 +171,7 @@
     var botCreatorIDs = [];
 
     var trapbot = {
-        version: "1",
+        version: "2",
         status: false,
         name: "Flavorz-bot1",
         loggedInID: null,
