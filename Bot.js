@@ -183,7 +183,7 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "Flavorz bar",
+            botName: "EF-Bot",
             language: "english",
             chatLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/en.json",
             maximumAfk: 120,
@@ -221,19 +221,19 @@
             filterChat: true,
             etaRestriction: false,
             welcome: true,
-            opLink: "http://goo.gl/SGFnOh",
-            rulesLink: "http://goo.gl/96KCIU",
+            opLink: "",
+            rulesLink: "",
             themeLink: null,
-            fbLink: "http://goo.gl/QGmRD8",
+            fbLink: "",
             youtubeLink: null,
-            website: "http://jsim31.wix.com/edm-nation",
+            website: "",
             intervalMessages: [],
             messageInterval: 5,
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "http://jsim31.wix.com/edm-nation",
-                OP: "http://jsim31.wix.com/edm-nation"
+                NSFW: "",
+                OP: ""
             }
         },
         room: {
