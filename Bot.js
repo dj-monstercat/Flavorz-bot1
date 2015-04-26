@@ -224,7 +224,7 @@
             opLink: "",
             rulesLink: "",
             themeLink: null,
-            fbLink: "",
+            fbLink: "http://goo.gl/CAjtBf",
             youtubeLink: null,
             website: "",
             intervalMessages: [],
@@ -250,7 +250,7 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (trapbot.status && trapbot.settings.autodisable) {
-                    API.sendChat('We have commands, do you want to know wich? Type !commands');
+                    API.sendChat('fallow us on twitter: http://goo.gl/CAjtBf');
                 }
             },
             queueing: 0,
