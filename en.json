@@ -5,7 +5,7 @@
     "datarestored": "Previously stored data successfully retrieved.",
     "greyuser": "Only bouncers and up can run a bot.",
     "bouncer": "The bot can't move people when it's run as a bouncer.",
-    "online": "/me EF-Bot v%%VERSION%% rinning in Maintenance Mode! some stuff may not work due to editing the script.",
+    "online": "/me EF-Bot v%%VERSION%% online!.",
 
 
     "welcome": "/me %%NAME%% has joind the room!",
@@ -141,5 +141,5 @@
     "website": "/me we don't have a website but we do have a stream:  http://www.twitch.tv/nightblue3",
     "twitter": "/me null",
     "youtube": "/me [%%NAME%%] Subscribe to us on youtube: %%LINK%%",
-    "songstatistics": "/me %%TITLE%% : %%WOOTS%% :+1: | %%GRABS%% :green_heart: | %%MEHS%% :broken_heart:"
+    "songstatistics": "/me %%ARTIST%% - %%TITLE%%: %%WOOTS%% :+1: | %%GRABS%% :green_heart: | %%MEHS%% :broken_heart:"
 }
