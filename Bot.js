@@ -188,6 +188,7 @@
             chatLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/en.json",
             maximumAfk: 120,
             afkRemoval: false,
+            autoroulette: 60, 
             maximumDc: 60,
             bouncerPlus: true,
             blacklistEnabled: true,
