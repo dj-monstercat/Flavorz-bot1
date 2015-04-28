@@ -199,7 +199,7 @@
             voteSkip: false,
             voteSkipLimit: 7,
             timeGuard: true,
-            maximumSongLength: 6,
+            maximumSongLength: 10,
             autodisable: true,
             commandCooldown: 30,
             usercommandsEnabled: true,
@@ -255,9 +255,9 @@
             motdEnabled: false,
             motdInterval: 20,
             motd: "",
-            filterChat: true,
+            filterChat: false,
             etaRestriction: false,
-            welcome: false,
+            welcome: true,
             opLink: "",
             rulesLink: "null",
             themeLink: null,
@@ -287,7 +287,7 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (trapbot.status && trapbot.settings.autodisable) {
-                    API.sendChat('We have commands, do you want to know wich? Type !commands');
+                    API.sendChat('[announcement] don't forget to like our facebook:');
                 }
             },
             queueing: 0,
