@@ -287,7 +287,7 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (trapbot.status && trapbot.settings.autodisable) {
-                    API.sendChat('[announcement] don't forget to like our facebook:');
+                    API.sendChat('[announcement] new things coming to EF-Bot: changing language to Spanish!');
                 }
             },
             queueing: 0,
