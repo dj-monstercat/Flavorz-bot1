@@ -282,12 +282,12 @@
             usercommand: true,
             allcommand: true,
             afkInterval: null,
-            autoskip: false,
+            autoskip: true,
             autoskipTimer: null,
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (trapbot.status && trapbot.settings.autodisable) {
-                    API.sendChat('[announcement] new things coming to EF-Bot: changing language to Spanish!');
+                    API.sendChat('[announcement] i have chaged the bot to skip every song after it is done to prevent the video bug!');
                 }
             },
             queueing: 0,
