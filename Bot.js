@@ -171,7 +171,7 @@
     var botCreatorIDs = [];
 
     var trapbot = {
-        version: "3",
+        version: "4",
         status: false,
         name: "Flavorz-bot1",
         loggedInID: null,
@@ -287,7 +287,7 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (trapbot.status && trapbot.settings.autodisable) {
-                    API.sendChat('[announcement] i have chaged the bot to skip every song after it is done to prevent the video bug!');
+                    API.sendChat('[announcement] Don't forget to bookmark the room!');
                 }
             },
             queueing: 0,
