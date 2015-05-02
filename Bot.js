@@ -2989,7 +2989,7 @@
                             API.sendChat(subChat(trapbot.chat.ball, {name: chat.un, botname: trapbot.settings.botName, question: argument, response: trapbot.settings.ball[randomBall]}));
                     }
                 }
-             },
+            },
                     
 
             ghostbusterCommand: {
