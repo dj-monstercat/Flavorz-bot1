@@ -3013,7 +3013,8 @@
                         else API.sendChat(subChat(basicBot.chat.notghosting, {name1: chat.un, name2: name}));     
                     }
                 }
-            },
+            }    
+        },
   
     loadChat(trapbot.startup);
 }).call(this);
