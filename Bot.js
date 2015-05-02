@@ -287,7 +287,7 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (trapbot.status && trapbot.settings.autodisable) {
-                    API.sendChat('[announcement] Dont forget to bookmark the room!');
+                    API.sendChat('');
                 }
             },
             queueing: 0,
