@@ -3015,6 +3015,5 @@
                 }
             }    
         },
-  
-    loadChat(trapbot.startup);
+     loadChat(trapbot.startup);
 }).call(this);
