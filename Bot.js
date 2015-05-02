@@ -171,7 +171,7 @@
     var botCreatorIDs = [];
 
     var trapbot = {
-        version: "4",
+        version: "3",
         status: false,
         name: "Flavorz-bot1",
         loggedInID: null,
@@ -282,12 +282,12 @@
             usercommand: true,
             allcommand: true,
             afkInterval: null,
-            autoskip: true,
+            autoskip: false,
             autoskipTimer: null,
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (trapbot.status && trapbot.settings.autodisable) {
-                    API.sendChat('[announcement] Don't forget to bookmark the room!');
+                    API.sendChat('[announcement] Dont forget to bookmark the room!');
                 }
             },
             queueing: 0,
