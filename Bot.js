@@ -287,7 +287,7 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (trapbot.status && trapbot.settings.autodisable) {
-                    API.sendChat('[announcement] more updates to come!');
+                    API.sendChat('check out our website by typing !website in the chat!');
                 }
             },
             queueing: 0,
