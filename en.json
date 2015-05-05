@@ -143,7 +143,7 @@
     "unmuterank": "/me [@%%NAME%%] You can't unmute persons with an equal or higher rank than you.",
     "commandscd": "/me [@%%NAME%%] The cooldown for commands by users is now set to %%TIME%% seconds.",
     "voteratio": "/me [@%%NAME%%] @%%USERNAME%% ~ woots: %%WOOT%%, mehs: %%MEHS%%, ratio (w/m): %%RATIO%%.",
-    "website": "/me we check out our website: http://dj-monstercat1.wix.com/electronic-family",
+    "website": "/me check out our website: http://dj-monstercat1.wix.com/electronic-family",
     "twitter": "/me null",
     "youtube": "/me [%%NAME%%] Subscribe to us on youtube: %%LINK%%",
     "songstatistics": "/me %%ARTIST%% - %%TITLE%%: %%WOOTS%% :blue_heart: | %%GRABS%% :purple_heart: | %%MEHS%% :green_heart:"
