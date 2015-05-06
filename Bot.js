@@ -272,7 +272,7 @@
             opLink: null,
             rulesLink: null,
             themeLink: null,
-            fbLink: null,
+            fbLink: ,
             youtubeLink: null,
             website: null,
             intervalMessages: [],
