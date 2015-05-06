@@ -187,9 +187,9 @@
             botName: "EF-Bot",
             language: "english",
             chatLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/en.json",
-            startupCap: 1, // 1-200
-            startupVolume: 0, // 0-100
-            startupEmoji: false, // true or false
+            startupCap: 200, // 1-200
+            startupVolume: 30, // 0-100
+            startupEmoji: true, // true or false
             cmdDeletion: true,
             maximumAfk: 120,
             afkRemoval: true,
@@ -272,7 +272,7 @@
             opLink: null,
             rulesLink: null,
             themeLink: null,
-            fbLink: null,
+            fbLink:  http://goo.gl/jKRvJw,
             youtubeLink: null,
             website: null,
             intervalMessages: [],
