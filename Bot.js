@@ -172,12 +172,12 @@
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
-        version: "5",
+        version: "2.3.4",
         status: false,
         name: "Flavorz-bot1",
         loggedInID: null,
         scriptLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/Bot.js",
-        cmdLink: "",
+        cmdLink: "http://dj-monstercat1.wix.com/electronic-family#!commands/cwim",
         chatLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/en.json",
         chat: null,
         loadChat: loadChat,
@@ -187,12 +187,12 @@
             botName: "EF-Bot",
             language: "english",
             chatLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/en.json",
-            startupCap: 200, // 1-200
-            startupVolume: 30, // 0-100
-            startupEmoji: true, // true or false
+            startupCap: 1, // 1-200
+            startupVolume: 0, // 0-100
+            startupEmoji: false, // true or false
             cmdDeletion: true,
             maximumAfk: 120,
-            afkRemoval: false,
+            afkRemoval: true,
             maximumDc: 60,
             bouncerPlus: true,
             blacklistEnabled: true,
@@ -272,9 +272,9 @@
             opLink: null,
             rulesLink: null,
             themeLink: null,
-            fbLink: http://goo.gl/jKRvJw,
+            fbLink: null,
             youtubeLink: null,
-            website: http://dj-monstercat1.wix.com/electronic-family,
+            website: null,
             intervalMessages: [],
             messageInterval: 5,
             songstats: true,
@@ -298,8 +298,8 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (basicBot.status && basicBot.settings.autodisable) {
-                    API.sendChat('check out our blog: http://dj-monstercat1.wix.com/ef-blog-english');
-                    API.sendChat('check out our website: http://dj-monstercat1.wix.com/electronic-family');
+                    API.sendChat('!autodisable');
+                    API.sendChat('!afkdisable');
                 }
             },
             queueing: 0,
