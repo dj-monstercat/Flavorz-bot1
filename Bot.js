@@ -220,12 +220,12 @@
                 ["unavailable", "The song you played was not available for some users. "]
             ],
             ball: [
-            "I would answer but qtbot is drunk right now, shhhh.",
+            "I would answer but i am so drunk right now, shhhh.",
             "The #dolphingang would know, I don't.",
             "Concentrate and ask again.",
             "Yer, something like that.",
             "Better not tell you now.",
-            "I don't know, ask QTπ.",
+            "I don't know, ask dj-monstercat1.",
             "Reply hazy, try again.",
             "You will have to wait.",
             "Outlook not so good.",
@@ -272,9 +272,9 @@
             opLink: null,
             rulesLink: null,
             themeLink: null,
-            fbLink: null,
+            fbLink: http://goo.gl/jKRvJw,
             youtubeLink: null,
-            website: null,
+            website: http://dj-monstercat1.wix.com/electronic-family,
             intervalMessages: [],
             messageInterval: 5,
             songstats: true,
@@ -298,8 +298,8 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (basicBot.status && basicBot.settings.autodisable) {
-                    API.sendChat('!afkdisable');
-                    API.sendChat('!joindisable');
+                    API.sendChat('check out our blog: http://dj-monstercat1.wix.com/ef-blog-english');
+                    API.sendChat('check out our website: http://dj-monstercat1.wix.com/electronic-family');
                 }
             },
             queueing: 0,
