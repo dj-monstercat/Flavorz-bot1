@@ -186,7 +186,7 @@
             botName: "EF-Bot",
             language: "english",
             chatLink: "https://rawgit.com/dj-monstercat/Flavorz-bot1/master/en.json",
-            maximumAfk: 120,
+            maximumAfk: 220,
             afkRemoval: false,
             maximumDc: 60,
             bouncerPlus: true,
@@ -247,15 +247,16 @@
             "Are you kidding?",
             "Don't bet on it.",
             "Forget about it.",
-            "Nooooooo!",
-            "My brain hurts ask me later!",
+            "I am too drunk, ask A World of Trance.",
+            "Wait what did you say?",
+            "My head hurts, try again later.",
              ],       
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
             motdEnabled: false,
             motdInterval: 20,
             motd: "",
-            filterChat: false,
+            filterChat: true,
             etaRestriction: false,
             welcome: true,
             opLink: "",
@@ -266,7 +267,7 @@
             website: "null",
             intervalMessages: [],
             messageInterval: 5,
-            songstats: false,
+            songstats: true,
             commandLiteral: "!",
             blacklists: {
                 NSFW: "http://jsim31.wix.com/edm-nation",
@@ -287,7 +288,7 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (trapbot.status && trapbot.settings.autodisable) {
-                    API.sendChat('[announcement] new things coming to EF-Bot: changing language to Spanish!');
+                    API.sendChat('Visit our fan website by typing !website in the chat');
                 }
             },
             queueing: 0,
